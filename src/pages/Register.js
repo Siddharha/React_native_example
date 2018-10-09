@@ -21,7 +21,7 @@ export default class Register extends React.Component {
             <Text style={styles.item}>{item.key}</Text>
             <Text style={styles.item}>{"NO DATA"}</Text>
             <View style={styles.underline}/>
-          </View>/* <Text style={styles.item}>{item.key}</Text>*/}
+          </View>}
         />
       </View>
     );
