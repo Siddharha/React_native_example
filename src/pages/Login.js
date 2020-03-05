@@ -16,27 +16,28 @@ export default class Login extends React.Component {
     }, 1000);
   }
 
- componentDidMount(){
-     return fetch('https://creative-lizard.000webhostapp.com/getDetailse.php')
-    .then((response) => response.json())
-    .then((responseJson) => {
-       this.setState({
-          dataSource: JSON.stringify(responseJson),
-        }, function(){
+//  componentDidMount(){
+//      return fetch('https://creative-lizard.000webhostapp.com/getDetailse.php')
+//     .then((response) => response.json())
+//     .then((responseJson) => {
+//        this.setState({
+//           // dataSource: JSON.stringify(responseJson),
+//         }, function(){
 
-        });
-    })
-    .catch((error) => {
-      console.error(error);
-    });
-  }
+//         });
+//     })
+//     .catch((error) => {
+//       console.error(error);
+//       dataSource: JSON.stringify({});
+//     });
+//   }
 
 
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.textStyle}>SAMPLE APP</Text>
-        <Text>{this.state.dataSource}</Text>
+        {/* <Text>{this.state.dataSource}</Text> */}
        <Button
           title="Register"
           onPress={() => this.props.navigation.navigate('Register')}
